@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 @Service
 @RequiredArgsConstructor
-public class JobOfferFacade {
+public class JobOfferService {
     private final JobOfferFetcher jobOfferFetcher;
 
     public List<JobOffer> fetchJobOffers() {
@@ -14,4 +14,15 @@ public class JobOfferFacade {
         return jobOffer;
     }
 
+    public List<JobOffer> filterByCompany(String blueSoft) {
+        return null;
+    }
+
+    public List<JobOffer> filterBySalary(int i, int i1) {
+        return null;
+    }
+
+    public List<JobOffer> sortByTitle(String title) {
+        return null;
+    }
 }

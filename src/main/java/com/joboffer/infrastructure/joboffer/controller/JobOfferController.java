@@ -1,7 +1,7 @@
 package com.joboffer.infrastructure.joboffer.controller;
 
 import com.joboffer.domain.joboffer.JobOffer;
-import com.joboffer.domain.joboffer.JobOfferFacade;
+import com.joboffer.domain.joboffer.JobOfferService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -14,7 +14,7 @@ import java.util.List;
 @RequiredArgsConstructor
 public class JobOfferController {
 
-    private final JobOfferFacade jobOfferFacade;
+    private final JobOfferService jobOfferFacade;
 
     @GetMapping
     public List<JobOffer> fetchJobOffers() {
